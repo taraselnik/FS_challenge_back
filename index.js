@@ -4,9 +4,9 @@ dotenv.config()
 import express from 'express';
 import mongoose from 'mongoose';
 import cors from 'cors';
-import router from './routes/Routes.js';
-import MedianModel from './models/MedianModel.js';
-import { getMedianf } from './utils/getMedian.js';
+import router from './src/routes/Routes.js';
+import MedianModel from './src/models/MedianModel.js';
+import { getMedianf } from './src/utils/getMedian.js';
 
 const URI = `${process.env.DATABASE_URL}`;
 
