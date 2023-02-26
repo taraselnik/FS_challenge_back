@@ -5,8 +5,8 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "start": "./node_modules/.bin/netlify-lambda serve src",
-    "build": "./node_modules/.bin/netlify-lambda build src",
+    "start": "node ./src/api.js",
+    "build": "netlify-lambda build src",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -18,9 +18,8 @@
     "express": "^4.18.2",
     "mongodb": "^5.0.1",
     "mongoose": "^6.9.2",
-    "netlify-lambda": "^2.0.15",
-    "serverless-http": "^3.1.0",
-    "netlify-cli": "^12.2.7"
+    "netlify-cli": "^12.2.7",
+    "netlify-lambda": "^2.0.16",
+    "serverless-http": "^3.1.1"
   }
-
 }
