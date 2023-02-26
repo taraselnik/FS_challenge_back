@@ -19,8 +19,7 @@ db.once('open', () => console.log('DataBase connected...'))
 
 app.use(cors());
 app.use(express.json());
-app.use('/.netlify/functions/', router);
-// app.use(router);
+app.use('/api/', router);
 
 app.listen(5000, () => console.log('Server up and running... port 5000'));
 
