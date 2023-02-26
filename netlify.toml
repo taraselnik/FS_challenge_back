@@ -1,6 +1,0 @@
-[build]
-functions = "functions/"
-
-[[functions]]
-path = "api/*"
-runtime = "nodejs14.x"
